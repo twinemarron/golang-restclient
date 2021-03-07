@@ -97,7 +97,9 @@ func init() {
 	flag.BoolVar(&mockUpEnv, "mock", false,
 		"Use 'mock' flag to tell package rest that you would like to use mockups.")
 
-	flag.Parse()
+	// 以下問題のためコメントアウト
+	// https://selfnote.work/20200327/programming/golang-testing2/
+	// flag.Parse()
 	startMockupServ()
 }
 
